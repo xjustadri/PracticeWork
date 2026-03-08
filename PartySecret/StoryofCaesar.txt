@@ -4,3 +4,9 @@ decodeMessage
 caesarCipher
 partyLocation
 isPartySafe
+
+Question 1 part 2
+the first index starts with 0 insted of 1.
+
+Question 2
+modulus operator %
