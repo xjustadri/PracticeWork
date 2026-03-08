@@ -10,3 +10,15 @@ the first index starts with 0 insted of 1.
 
 Question 2
 modulus operator %
+
+question 1 part 3
+Adding 1 helps include all number between and includes 3 and 33.
+
+Question 2
+Multiplying randomDecimal by range makes sure we get a decimal between 0 and the range we choose.
+
+Question 3
+Math.floor rounds down to nearest whole number within range. Math.round will round to the nearest number up or down which may go outside of our range.
+
+Question 4
+adding 3 makes sure the value is between 3-33.

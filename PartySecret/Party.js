@@ -20,3 +20,10 @@ const encryptedFirstLetter = alphabet[newIndex];
 
 const caesarCipher = "EUXWXV";
 const teaserCipher = caesarCipher.slice(0,3);
+
+//Exercise 3//
+const randomDecimal = Math.random(); //step 1//
+const range = 33 - 3 + 1; //31//
+const randomInRange = randomDecimal * range; //step 3//
+const randomInt = Math.floor(randomInRange);
+const shiftValue = randomInt + 3;
