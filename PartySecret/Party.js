@@ -78,3 +78,99 @@ switch (embleClue3)
 }
 
 // Answer: === checks both value and type unlike == //
+
+// Exercise 5//
+
+const guests =["Antony", "Cicero", "Cassius", "Cleopatra"];
+
+// step 1 & question 1//
+
+guests.unshift("Brutus");
+// answer: guests[0] //
+
+// step 2//
+
+guests.push("Augustus", "Lucia");
+
+// step 3 & question 2 //
+
+const spartacusIndex = guests.indexOf("Spartacus");
+// answer: -1
+
+// step 4 //
+
+const indexToRemove = guests.indexOf("Cassius");
+guests.splice(indexToRemove,1);
+
+// step 5//
+
+const specialGuests = guests.slice(0,3);
+
+// step 6//
+ const honoredGuests = guests.slice(0,1);
+ const otherGUests = guests.slice(1);
+ otherGUests.sort();
+ const sortedGuests = honoredGuests.concat(otherGuests);
+
+
+//  Exercise 6//
+
+const guests = {
+    Antony: {
+        title: "General",
+        region: "Rome",
+        dietaryPreference: "Vegetarian",
+        pastGifts: ["Golden Laurel", "Chariot"]
+    },
+    Cicero: {
+        title: "Orator",
+        region: "Arpinum",
+        diertatyPreference: "Omnivore",
+        pastGifts: ["Scroll of Proverbs", "Quill"]
+    }
+};
+
+// step 1 //
+guests.Brutus ={
+    title: "Senator",
+    region: "Rome",
+    dietaryPreference: "Vegan",
+    pastGifts: ["Silver Dagger", "Marble Bust"]
+};
+
+// step 2//
+ guests.Cicero.pastGifts.push("Golden Lyre");
+
+//  Step 3//
+const antonyRegion = guests.Antony.region;
+
+// step 4//
+delete guests.Cicero;
+
+// step 5 & question 1//
+const generalProfile = guests.Antony;
+generalProfile.region = "Egypt";
+
+// answer: Egypt because the variable is updated 
+
+
+// Excerise 7 //
+const friend ="Brutus"
+const shiftValue = 3;
+
+// step 1//
+const alphabet ="abcdefghijklmnopqrstuvwxyz";
+
+// step 2//
+let encryptedName = "";
+
+for(let i = 0; i < friend.length; i++)
+{
+    const currentLetter = friend[i];
+    const currentIndex = alphabet.indexOf(currentLetter.toLowerCase());
+    const newIndex = (currentIndex + shiftValue) % alphabet.length;
+    encryptedName += alphabet[newIndex].toUpperCase();
+}
+
+// Question 1: looping through each letter and making them uppercase until the code is deciphered.
+// question 2: makes sure the alphabet with loop after z back to a to keep the loop going.
