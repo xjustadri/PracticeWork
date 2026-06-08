@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff0066;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff3385;
+}
+
+#meme-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.meme {
+  position: relative;
+  width: 300px;
+}
+
+.meme img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.meme-text {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  pointer-events: none;
+}
+
+.top {
+  top: 10px;
+}
+
+.bottom {
+  bottom: 10px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 0, 0, 0.8);
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#random-template {
+  padding: 10px 20px;
+  background: #0099ff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#random-template:hover {
+  background: #33adff;
+}
+
